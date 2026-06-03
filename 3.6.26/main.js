@@ -156,21 +156,101 @@ if (username === "OptimusPrime" && password === "tr@n$f0rmer$0nearth") {
 
 let marks = 85;
 if (marks >= 90) {
-    console.log("Grade: A");    
+    console.log("Grade: A");
 } else if (marks >= 80) {
     console.log("Grade: B");
 } else {
     console.log("Grade: C");
 }
 
-let desscolor= "black";
-if (desscolor === "black") {
+let dresscolor = "yellow";
+if (dresscolor === "black") {
     console.log("You can wear this dress");
-}else if (desscolor === "white") {
+} else if (dresscolor === "white") {
     console.log("You can wear this dress");
-}else if (desscolor === "blue") {
+} else if (dresscolor === "blue") {
     console.log("You can wear this dress");
 }
- else {
+else {
     console.log("Your dress is not formal. You cannot wear this dress");
 }
+
+let device = "laptop";
+if (device === "laptop" || device === "tablet") {
+    console.log("You are allowed to use this device in the classroom");
+} else {
+    console.log("You are not allowed to use this device in the classroom");
+}
+
+let age1 = 15;
+let result = age1 >= 18 ? "You are an adult" : "You are a minor";
+console.log(result);
+
+let score = 22;
+let grade = score >= 40 ? "Passed" : "Failed";
+console.log(grade);
+
+let age2 = 25;
+let permission = age2 >= 25 ? "You are allowed to buy property" : "You are not allowed to have any property";
+console.log(permission);
+//  switch statement
+
+
+let mark = 90;
+switch (true) {
+    case (mark >= 80 && mark <= 100):
+        console.log("Grade: A+");
+        break;
+    case (mark >= 70 && mark < 79):
+        console.log("Grade: A");
+        break;
+    case (mark >= 60 && mark < 69):
+        console.log("Grade: A-");
+        break;
+    case (mark >= 50 && mark < 59):
+        console.log("Grade: B");
+        break;
+    case (mark >= 40 && mark < 49):
+        console.log("Grade: D");
+    default:
+        console.log("Grade: F");
+}
+
+let number = 357;
+if (number % 2 === 0) {
+    console.log(number, "is an even number");
+} else {
+    console.log(number, "is an odd number");
+}
+
+let firstname = "Optimus";
+let lastname = "Prime";
+let fullname = firstname + " " + lastname;
+console.log(fullname);
+
+let poem= `"Two roads diverged in a yellow wood,
+ And sorry I could not travel both
+ And be one traveler, 
+ long I stood
+ And looked down one as far as I could
+ To where it bent in the undergrowth;"`;
+console.log(poem);
+
+let firstname2 = "Optimus";
+let lastname2 = "Prime";
+let fullname2 = `${firstname2} ${lastname2}`;
+console.log(fullname2);
+
+let fullname3 = `Optimus Prime`;
+console.log(fullname3.length);
+console.log(fullname3.charAt(12));
+
+let txt = "Hello";
+let txt2 = "World";
+let result2 = txt.concat(" ", txt2);
+console.log(result2);
+
+console.log(fullname3.toUpperCase());
+console.log(fullname3.toLowerCase());
+
+console.log(fullname3.trim());
